@@ -4,7 +4,7 @@ defmodule EctoBootMigration.Mixfile do
   def project do
     [app: :ecto_boot_migration,
      version: "0.3.0",
-     elixir: "~> 1.4",
+     elixir: "~> 1.15",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
@@ -21,7 +21,7 @@ defmodule EctoBootMigration.Mixfile do
 
   defp deps do
     [
-      {:ecto_sql, "~> 3.0"},
+      {:ecto_sql, "~> 3.11"},
       {:ex_doc, ">= 0.0.0", only: :dev},
     ]
   end
